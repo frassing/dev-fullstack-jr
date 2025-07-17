@@ -1,0 +1,109 @@
+.main-listas {
+	display: grid;
+	grid-template-areas:
+		"title title title"
+		"recipe recipe recipe"
+		"hobbies hobbies aside";
+	margin: 0 10px;
+}
+
+.listas-title {
+	margin: 30px 0;
+	text-align: center;
+	grid-area: title;
+}
+
+section {
+	padding: 15px;
+}
+
+section h2 {
+	margin: 10px 0;
+	text-align: center;
+}
+
+.hobby {
+	grid-area: hobbies;
+	background-color: rgb(13, 29, 23);
+}
+
+.hobby ul {
+	list-style-position: inside;
+}
+
+.recipe {
+	grid-area: recipe;
+	background-color: rgba(73, 73, 73, 0.904);
+	display: grid;
+	grid-template-areas: "subtitle subtitle"
+		"ingredients steps";
+	grid-template-columns: 250px auto;
+}
+
+.recipe div {
+	padding: 10px 0;
+}
+
+.recipe h3 {
+	margin: 10px 0;
+	padding-top: 15px;
+	border-top: 1px solid;
+}
+
+.recipe ul {
+	list-style: circle;
+	list-style-position: inside;
+}
+
+.recipe ol {
+	list-style-position: inside;
+}
+
+.recipe ol li {
+	padding: 6px 0;
+}
+
+.recipe h2 {
+	grid-area: subtitle;
+}
+
+.recipe h2+div {
+	grid-area: ingredients;
+}
+
+.recipe div+div {
+	grid-area: steps;
+}
+
+.menu {
+	grid-area: aside;
+	background-color: rgb(2, 56, 31);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.menu ul {
+	list-style: none;
+	padding: 12px;
+}
+
+.menu a {
+	color: inherit;
+}
+
+@media (max-width: 768px) {
+	.main-listas {
+		grid-template-areas: "title"
+			"recipe"
+			"hobbies"
+			"aside";
+	}
+
+	.recipe {
+		grid-template-areas: "subtitle subtitle"
+			"ingredients ingredients"
+			"steps steps";
+	}
+}

@@ -1,0 +1,42 @@
+main {
+	margin: 20px 10px;
+	min-height: 80vh;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 25px
+}
+
+article {
+	width: 350px;
+	background-color: #fcfcfc;
+	border-radius: 6px;
+	color: #000000;
+	padding: 16px 10px;
+}
+
+.article-title {
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.article-desc {
+	margin-bottom: 16px;
+	padding: 0 6px;
+}
+
+.article-btn {
+	background-color: #02441e;
+	color: #fff;
+	padding: 10px;
+	border-radius: 4px;
+	text-decoration: none;
+	display: flex;
+	justify-self: center;
+}
+
+.article-btn:hover {
+	background-color: #012e14;
+}
+

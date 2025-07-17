@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Feedback</title>
+	<link rel="stylesheet" href="./assets/css/base.css">
+	<link rel="stylesheet" href="./assets/css/feedback.css">
+</head>
+
+<body>
+	<header>
+		<button type="button" id="toggle-menu-mobile">+</button>
+		<nav class="nav-bar">
+			<ul>
+				<li> <a href="./index.html">Início</a></li>
+				<li> <a href="./secoes.html">Seções Semânticas</a></li>
+				<li> <a href="./listas.html">Listas</a></li>
+				<li> <a href="./feedback.html">Formulário Feedback</a></li>
+				<li> <a href="./galeria.html">Galeria Imagens</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<h1>Formulário de Feedback</h1>
+		<form class="form-container">
+			<div class="form-campo">
+				<label for="first-name">Nome:</label>
+				<input type="text" id="first-name" placeholder="Nome" required>
+			</div>
+
+			<div class="form-campo">
+				<label for="email">E-mail:</label>
+				<input type="email" id="email" placeholder="seuemail@email.com" required>
+			</div>
+
+			<div class="endereco">
+				<div class="form-campo">
+					<label for="cep">CEP:</label>
+					<input type="text" name="cep" id="cep">
+				</div>
+				<div class="form-campo">
+					<label for="bairro">Bairro:</label>
+					<input type="text" name="bairro" id="bairro">
+				</div>
+				<div class="form-campo campo-rua">
+					<label for="rua">Rua:</label>
+					<input type="text" name="rua" id="rua">
+				</div>
+				<div class="form-campo campo-num">
+					<label for="numero">Nº:</label>
+					<input type="text" name="numero" id="numero">
+				</div>
+				<div class="form-campo campo-complemento">
+					<label for="complemento">Complemento:</label>
+					<input type="text" name="complemento" id="complemento">
+				</div>
+			</div>
+
+			<div class="form-campo">
+				<label for="feedback-type">Tipo de feedback:</label>
+				<select name="feedback-type" id="feedback-type" required>
+					<option value="initial">Selecione uma opção</option>
+					<option value="elogio">Elogio</option>
+					<option value="critica">Crítica</option>
+					<option value="sugestao">Sugestão</option>
+				</select>
+			</div>
+
+			<div class="form-campo">
+				<label for="comment">Feedback:</label>
+				<textarea name="comment" id="comment" placeholder="Escreva a sua mensagem aqui." required></textarea>
+			</div>
+		</form>
+		<button type="submit" class="enviar-btn">Enviar</button>
+	</main>
+	<footer class="footer">
+		<p>Desenvolvido por Raquel Roessing - Turma 2 Dev Fullstack Jr. +praTI</p>
+	</footer>
+	<script src="./assets/app.js"></script>
+</body>
+
+</html>
